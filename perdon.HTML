@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Carta de disculpa</title>
+    <style>
+        body {
+         background-color: rgb(202, 202, 29);
+        }
+      #carta {
+        background-color: pink;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 50%;
+        height: 300px;
+        margin: 50px auto;
+        padding: 20px;
+        position: relative;
+      }
+      
+      #corazon {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        font-size: 36px;
+        color: red;
+      }
+      
+      h1 {
+        font-size: 24px;
+        margin-top: 0;
+      }
+      
+      p {
+        font-size: 18px;
+        margin-top: 10px;
+      }
+      
+      button {
+        background-color: yellow;
+        border: none;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px 20px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="carta">
+      <div id="corazon">&hearts;</div>
+      <button id="abreme" onclick="mostrarMensaje()">Abreme, por favor</button>
+      <p id="mensaje" style="display:none;">Perdón si ayer dije algo que te hizo molestar. Te puedo asegurar que todos los mensajes que te envié ayer fueron con la mejor de las intenciones, no queria en ningun momento que esos mensajes nos lleven a esto, por eso te pido una disculpa a mi manera, entiendo que no querras hablar y querras tomarte tu espacio, pero por favor, mándame un mensaje cuando estés lista para hablar acerca de todo esto, hoy, mañana o cuando sea, te espero. Gracias por escucharme. No es necesario que respondas a esto.</p>
+      
+    </div>
+    
+    <script>
+      function mostrarMensaje() {
+        document.getElementById("abreme").style.display = "none";
+        document.getElementById("mensaje").style.display = "block";
+      }
+    </script>
+  </body>
+</html>
